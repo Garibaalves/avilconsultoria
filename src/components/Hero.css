@@ -1,0 +1,174 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    /* Navbar height */
+}
+
+/* Background Abstract shapes */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 60%;
+    height: 120%;
+    background: var(--color-primary);
+    opacity: 0.1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transform: rotate(-15deg);
+    z-index: 1;
+    filter: blur(50px);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.hero-title span {
+    color: var(--color-primary);
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    font-weight: 300;
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Decorative Circle */
+.visual-circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), #dcbdb5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 50px rgba(179, 140, 130, 0.4);
+    animation: float 6s ease-in-out infinite;
+}
+
+.visual-circle::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float-reverse {
+    0% {
+        transform: translateY(0px) scale(1.05);
+    }
+
+    50% {
+        transform: translateY(15px) scale(1.05);
+        /* Moves opposite to circle */
+    }
+
+    100% {
+        transform: translateY(0px) scale(1.05);
+    }
+}
+
+.hero-logo-floating {
+    width: 120%;
+    /* Cover the circle */
+    height: auto;
+    max-width: 500px;
+    position: relative;
+    z-index: 5;
+    animation: float-reverse 7s ease-in-out infinite;
+    /* Different timing and direction */
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 2rem;
+    }
+
+    .visual-circle {
+        width: 300px;
+        height: 300px;
+    }
+}
