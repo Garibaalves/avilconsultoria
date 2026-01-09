@@ -23,7 +23,7 @@ const Navbar = () => {
                 <li><a href="#hero" onClick={() => setIsOpen(false)}>Início</a></li>
                 <li><a href="#services" onClick={() => setIsOpen(false)}>Serviços</a></li>
                 <li><a href="#purpose" onClick={() => setIsOpen(false)}>Propósito & Valores</a></li>
-                <li><a href="#academy" onClick={() => setIsOpen(false)}>Academia de Líderes</a></li>
+                <li><a href="#academy" onClick={() => setIsOpen(false)}>Jornada de Líderes</a></li>
                 <li><a href="#gallery" onClick={() => setIsOpen(false)}>Galeria</a></li>
                 <li><a href="#contact" onClick={() => setIsOpen(false)}>Contato</a></li>
             </ul>

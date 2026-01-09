@@ -21,7 +21,7 @@ const Contact = () => {
 
         const message = `Olá! Me chamo *${name}*.\nSou *${type}*.\nMeu contato: ${phone}\nEmail: ${email}\n\nGostaria de mais informações sobre os serviços da Avil Consultoria.`;
 
-        const whatsappUrl = `https://wa.me/55988893909?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/5531988893909?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappUrl, '_blank');
     };
@@ -51,11 +51,11 @@ const Contact = () => {
 
                         <div className="info-item">
                             <Phone className="icon" />
-                            <span>(98) 98893-9090</span>
+                            <span>(31) 98889-3909</span>
                         </div>
                         <div className="info-item">
                             <Mail className="icon" />
-                            <span>contato@avilconsultoria.com.br</span>
+                            <span>avilconsultoriarh@gmail.com</span>
                         </div>
                         <div className="info-item">
                             <MapPin className="icon" />

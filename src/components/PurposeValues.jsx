@@ -4,11 +4,11 @@ import { Target, TrendingUp, Users, Leaf, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const valuesData = [
-    { id: 1, title: "Excelência em Soluções", icon: <Award />, text: "Soluções personalizadas alinhadas com o perfil e a realidade de cada cliente." },
-    { id: 2, title: "Desenvolvimento Contínuo", icon: <TrendingUp />, text: "Crescimento constante de pessoas e empresas através de capacitação." },
-    { id: 3, title: "Cultura Organizacional", icon: <Users />, text: "Alinhamento e fortalecimento da cultura com as metas estratégicas." },
-    { id: 4, title: "Impacto Sustentável", icon: <Leaf />, text: "Lideranças preparadas para gerar resultados sustentáveis e duradouros." },
-    { id: 5, title: "Empoderamento", icon: <Target />, text: "Apoio ao desenvolvimento pessoal e profissional para atingir objetivos." }
+    { id: 1, title: "Excelência em Soluções", icon: <Award />, text: "Atuação pautada em soluções personalizadas, alinhadas ao perfil, à realidade e às necessidades de cada cliente." },
+    { id: 2, title: "Cultura Organizacional", icon: <Users />, text: "Fortalecimento da cultura organizacional em consonância com as estratégias, valores e objetivos do negócio." },
+    { id: 3, title: "Impacto Sustentável", icon: <Leaf />, text: "Desenvolvimento de lideranças e equipes preparadas para gerar resultados consistentes, sustentáveis e duradouros ao longo do tempo." },
+    { id: 4, title: "Desenvolvimento Contínuo", icon: <TrendingUp />, text: "Valorização do aprendizado constante e do crescimento sustentável de pessoas e organizações." },
+    { id: 5, title: "Empoderamento", icon: <Target />, text: "Apoio ao desenvolvimento pessoal e profissional, promovendo autonomia, clareza e responsabilidade para a tomada de decisões e alcance de objetivos." }
 ];
 
 const PurposeValues = () => {

@@ -7,29 +7,25 @@ import {
     Settings,
     Users,
     Presentation,
-    HeartHandshake,
-    DollarSign,
     TrendingUp,
-    Search,
     Compass,
-    FileText,
+    GraduationCap,
+    ClipboardCheck,
+    UserPlus
 } from 'lucide-react';
 
 const servicesData = {
     companies: [
-        { title: "Mapeamento de Processos", icon: <Settings size={32} />, desc: "Consultoria em Mapeamento e Revisão de processos de RH." },
-        { title: "Desenvolvimento de Liderança", icon: <Users size={32} />, desc: "Programa completo para capacitação de líderes." },
-        { title: "Palestras e Workshops", icon: <Presentation size={32} />, desc: "Treinamentos customizados, presenciais ou remotos." },
-        { title: "Clima e Cultura", icon: <HeartHandshake size={32} />, desc: "Gestão de clima e fortalecimento da cultura organizacional." },
-        { title: "Remuneração", icon: <DollarSign size={32} />, desc: "Estratégias de remuneração e benefícios." },
-        { title: "Plano de Carreira", icon: <TrendingUp size={32} />, desc: "Estruturação de planos de carreira e sucessão." },
-        { title: "Recrutamento Estratégico", icon: <Search size={32} />, desc: "Seleção especializada para cargos estratégicos." }
+        { title: "Mapeamento de Processos", icon: <Settings size={32} />, desc: "Consultoria em mapeamento, revisão e aprimoramento dos processos de Recursos Humanos, com foco em eficiência, clareza e alinhamento estratégico." },
+        { title: "Desenvolvimento de Liderança", icon: <Users size={32} />, desc: "Programas estruturados para o desenvolvimento e amadurecimento de lideranças, alinhados à cultura organizacional e aos objetivos do negócio." },
+        { title: "Palestras e Workshops", icon: <Presentation size={32} />, desc: "Treinamentos customizados, presenciais ou remotos, com foco em aplicação prática e desenvolvimento contínuo." },
+        { title: "Cursos e Mentorias para Times de RH", icon: <GraduationCap size={32} />, desc: "Capacitação técnica e estratégica para profissionais de Recursos Humanos, por meio de cursos e mentorias voltados ao fortalecimento do papel do RH nas organizações." }
     ],
     individuals: [
-        { title: "Coaching de Carreira", icon: <Compass size={32} />, desc: "Apoio para transição e crescimento profissional." },
-        { title: "Mapeamento de Perfil", icon: <User size={32} />, desc: "Análise comportamental profunda." },
-        { title: "Orientação Vocacional", icon: <TrendingUp size={32} />, desc: "Direcionamento de carreira para jovens." },
-        { title: "Currículo e Entrevista", icon: <FileText size={32} />, desc: "Elaboração de currículo e preparação para entrevistas." }
+        { title: "Avaliação de Carreira", icon: <ClipboardCheck size={32} />, desc: "Análise estruturada de trajetória profissional, perfil comportamental e objetivos, apoiando decisões mais conscientes e alinhadas ao momento de carreira." },
+        { title: "Orientação Vocacional", icon: <Compass size={32} />, desc: "Processo de orientação para jovens, considerando interesses, aptidões e possibilidades reais de formação e atuação profissional." },
+        { title: "Coaching de Carreira", icon: <TrendingUp size={32} />, desc: "Processo estruturado de desenvolvimento profissional, com foco em autoconhecimento, definição de objetivos e planejamento de carreira, apoiando transições e tomadas de decisão com maior clareza e segurança." },
+        { title: "Mentoria Individual", icon: <UserPlus size={32} />, desc: "Acompanhamento personalizado para desenvolvimento profissional, tomada de decisão e fortalecimento de competências." }
     ]
 };
 
@@ -64,18 +60,29 @@ const Services = () => {
                     Nossos Serviços
                 </motion.h2>
 
+                <motion.p
+                    className="services-intro"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 3rem', fontSize: '1.1rem', color: '#555' }}
+                >
+                    Acreditamos que organizações são formadas por pessoas.
+                    Por isso, nossas soluções atuam tanto no nível organizacional quanto no desenvolvimento individual, sempre de forma integrada e complementar.
+                </motion.p>
+
                 <div className="services-tabs">
                     <button
                         className={`tab-btn ${activeTab === 'companies' ? 'active' : ''}`}
                         onClick={() => setActiveTab('companies')}
                     >
-                        <Building2 size={20} /> Para Empresas
+                        <Building2 size={20} /> Atuação Organizacional
                     </button>
                     <button
                         className={`tab-btn ${activeTab === 'individuals' ? 'active' : ''}`}
                         onClick={() => setActiveTab('individuals')}
                     >
-                        <User size={20} /> Para Pessoas
+                        <User size={20} /> Atuação Individual
                     </button>
                 </div>
 

@@ -15,7 +15,7 @@ const LeadershipAcademy = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7 }}
                     >
-                        Academia de Líderes
+                        Jornada de Líderes
                     </motion.h2>
                     <motion.p
                         className="academy-subtitle"
@@ -24,7 +24,7 @@ const LeadershipAcademy = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.3 }}
                     >
-                        Um ecossistema completo para formar a liderança do futuro.
+                        Programa estruturado de desenvolvimento de lideranças, com metodologia própria, acompanhamento contínuo e foco na aplicação prática no contexto organizacional.
                     </motion.p>
                 </div>
 
@@ -60,7 +60,7 @@ const LeadershipAcademy = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                    <a href="https://wa.me/55988893909?text=Tenho%20interesse%20na%20Academia%20de%20L%C3%ADderes" target="_blank" className="btn btn-primary">
+                    <a href="https://wa.me/5531988893909?text=Tenho%20interesse%20na%20Jornada%20de%20L%C3%ADderes" target="_blank" className="btn btn-primary">
                         Conheça o Programa
                     </a>
                 </motion.div>

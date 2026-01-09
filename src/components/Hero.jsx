@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-    const whatsappNumber = "55988893909";
+    const whatsappNumber = "5531988893909";
     const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre a Avil Consultoria.");
 
     return (
@@ -27,7 +27,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     >
-                        Consultoria estratégica em RH para transformar organizações e potencializar talentos.
+                        Consultoria estratégica em Recursos Humanos para fortalecer organizações e desenvolver pessoas.
                     </motion.p>
 
                     <motion.div
