@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import About from './components/About';
 import PurposeValues from './components/PurposeValues';
 import LeadershipAcademy from './components/LeadershipAcademy';
 import Gallery from './components/Gallery';
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <About />
         <PurposeValues />
         <LeadershipAcademy />
         <Gallery />
