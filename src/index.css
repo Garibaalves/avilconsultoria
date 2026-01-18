@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
+  color-scheme: light;
   --color-primary: #b38c82;
   --color-text: #020101;
   --color-bg: #ffffff;
